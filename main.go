@@ -38,5 +38,7 @@ func main() {
     if err := cmd.Execute(); err != nil {
         log.Fatalf("Error executing root command: %v", err)
     }
+
+    fmt.Println("hi")
 }
 
