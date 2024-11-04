@@ -90,6 +90,6 @@ var DeleteCmd = &cobra.Command{
             log.Fatalf("Invalid task ID: %v", err)
         }
         
-        db.DeleteTask(int64(idToDelete)) //cannot use idToDelete (variable of type int) as int64 value in argument to db.DeleteTask
+        db.DeleteTask(int64(idToDelete))
     },
 }

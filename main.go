@@ -1,4 +1,3 @@
-// main.go
 package main
 
 import (
@@ -11,15 +10,15 @@ import (
 func main() {
 
 
-    //mySQL
-    // dsn := "root:123@tcp(localhost:3306)/"
-    // var db database.Database = &database.MySQLDatabase{}
+    //_____mySQL______
+    dsn := "root:123@tcp(localhost:3306)/"
+    var db database.Database = &database.MySQLDatabase{}
     
 
 
-    //mongoDB
-    dsn := "mongodb://localhost:27017"
-	db := &database.MongoDB{}
+    //_____mongoDB______
+    // dsn := "mongodb://localhost:27017"
+	// db := &database.MongoDB{}
 
 
 	err := db.InitDB(dsn)

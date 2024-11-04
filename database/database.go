@@ -1,15 +1,5 @@
 package database
 
-// import "time"
-
-// type Task struct {
-//     ID          int
-//     Title       string
-//     Description string
-//     Status      string
-//     CreatedAt   time.Time
-// }
-
 type Database interface {
     InitDB(dataSourceName string) error
     CreateTask(task Task) error
