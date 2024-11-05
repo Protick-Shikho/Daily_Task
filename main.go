@@ -11,14 +11,13 @@ func main() {
 
 
     //_____mySQL______
-    dsn := "root:123@tcp(localhost:3306)/"
-    var db database.Database = &database.MySQLDatabase{}
+    // dsn := "root:123@tcp(localhost:3306)/"
+    // var db database.Database = &database.MySQLDatabase{}
     
 
-
     //_____mongoDB______
-    // dsn := "mongodb://localhost:27017"
-	// db := &database.MongoDB{}
+    dsn := "mongodb://root:123@localhost:27017/admin"
+	db := &database.MongoDB{}
 
 
 	err := db.InitDB(dsn)

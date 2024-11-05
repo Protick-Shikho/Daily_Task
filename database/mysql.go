@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"log"
 	"time"
-    // "To_do_Task/database"
-
 
 	_ "github.com/go-sql-driver/mysql"
 )
